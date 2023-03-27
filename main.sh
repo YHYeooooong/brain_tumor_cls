@@ -6,7 +6,7 @@ do
         do
             for x in 'True' 'False'
             do
-                CUDA_VISIBLE_DEVICES=0 python resnet50_lr0.0001_mom0_e300_reallast.py --model ${i} --aug ${j} --opt ${k} --freeze ${x}
+                CUDA_VISIBLE_DEVICES=0 python train.py --model ${i} --aug ${j} --opt ${k} --freeze ${x}
             done
         done
     done
