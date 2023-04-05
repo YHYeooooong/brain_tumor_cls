@@ -23,3 +23,18 @@
 구축된 컨테이너에 접속한 다음, shell 파일 (.sh 파일)을 사용하여 ResNet, MobileNet, DenseNet의 fineutuning 시작
 
 ```sh main.sh```
+
+## Dataset
+현재 코드를 실행하기 위해서 필요한 데이터셋은 이 repo에 존재하지 않는다. 따로 brain tumor dataset 을 다운로드한 다음, 아래와 같은 형태로 dataset을 구축해야한다.
+```
+|
+└┬ dataset
+ |
+ ├ train 
+ |   ├  Class A
+ |   └  Class B
+ └  val 
+     ├  Class A
+     └  Class B
+     
+```
