@@ -26,6 +26,7 @@
 
 ## Dataset
 현재 코드를 실행하기 위해서 필요한 데이터셋은 이 repo에 존재하지 않는다. 따로 brain tumor dataset 을 다운로드한 다음, 아래와 같은 형태로 dataset을 구축해야한다.
+사용한 kaggle 데이터셋은 다음 링크에서 다운받을 수 있다. [brain_tumor_dataset](https://www.kaggle.com/datasets/erhmrai/brain-tumor-dataset/code)
 ```
 |
 └┬ dataset
