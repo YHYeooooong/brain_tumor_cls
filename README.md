@@ -41,3 +41,39 @@
      └  Class B
      
 ```
+
+#### Preprecessing
+주어진 이미지 데이터셋에 대해서 train set (80%), test set (20%)로 무작위 split [split_data.py](https://github.com/YHYeooooong/brain_tumor_cls/blob/main/split_data.py)
+
+
+
+#### 모델 훈련
+업로드 된 shell 스크립트 파일을 사용하여 Desnet121, ResNet50, MobileNetV2 훈련진행
+
+
+#### 결론
+
+1. ResNet50
+
+![resnet50-1](https://github.com/YHYeooooong/brain_tumor_cls/assets/43724177/f90982bb-7eb2-459a-b2b7-1355299cae15)
+
+![resnet50-2](https://github.com/YHYeooooong/brain_tumor_cls/assets/43724177/1353d896-9a74-497f-862c-a5ef95af9031)
+
+
+2. DenseNet121
+
+![densenet121-1](https://github.com/YHYeooooong/brain_tumor_cls/assets/43724177/28766863-1b6c-4c80-9186-a656a4610caa)
+
+![densenet121-2](https://github.com/YHYeooooong/brain_tumor_cls/assets/43724177/9510c830-828b-4bb6-ab5d-2fdb55e10df9)
+
+
+3. MobileNetV2
+
+![mobilenetv2-1](https://github.com/YHYeooooong/brain_tumor_cls/assets/43724177/44e5c58d-62b5-4efa-9e34-ea2eea40311f)
+
+![mobilenetv2-2](https://github.com/YHYeooooong/brain_tumor_cls/assets/43724177/12edb0fa-66c7-48f0-8047-6d27752f8ded)
+
+
+각 모델은 93% 의 평균 분류 정확도를 달성하였으나, 적은 수의 이미지로 이루어진 데이터세트를 사용하여 제대로 된 훈련그래프를 확인하기에는 어려움이 존해하였습니다.
+
+추후에 더 큰 이미지 데이터셋과 다양한 학습 하이퍼파라미터를 사용하여 모델들의 분류정확도 비교에 대한 추가연구가 필요합니다. 
